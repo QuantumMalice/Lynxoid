@@ -1,4 +1,3 @@
-import nextcord
 from nextcord import Embed, Colour, Interaction, slash_command
 from nextcord.ext import commands
 
