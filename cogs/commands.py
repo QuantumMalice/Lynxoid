@@ -1,7 +1,6 @@
 import nextcord
-from nextcord import Colour, slash_command
+from nextcord import Embed, Colour, slash_command
 from nextcord.ext import commands
-from tools.embeds import *
 
 
 class Commands(commands.Cog, name="Commands"):
