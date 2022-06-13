@@ -8,7 +8,7 @@ class __Init__(commands.Cog, name="Init"):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        activity = Game(name="/help", type=3)
+        activity = Game(name="!help", type=3)
         await self.bot.change_presence(status=Status.online, activity=activity)
 
         print("Lynxiod is alive!")
