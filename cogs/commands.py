@@ -1,4 +1,4 @@
-import os, nextcord
+import nextcord
 from nextcord import Colour, slash_command
 from nextcord.ext import commands
 from tools.embeds import *
