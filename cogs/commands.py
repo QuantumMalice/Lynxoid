@@ -15,7 +15,7 @@ class Commands(commands.Cog, name="Commands"):
         bot = self.bot
         botUser = bot.users[0]
         botPing = round(bot.latency * 1000)
-        embed = await EmbedTool.prepare_embed(botUser, None, f"> ***Ping:*** **`{botPing}ms`**\n", Colour.yellow())
+        embed = await EmbedTool.prepare_embed(botUser, None, f"> ***Latency:*** **`{botPing}ms`**\n", Colour.yellow())
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
 def setup(bot):
