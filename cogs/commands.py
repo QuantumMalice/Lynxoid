@@ -1,5 +1,5 @@
 import nextcord
-from nextcord import Embed, Colour, slash_command
+from nextcord import Embed, Colour, Interaction, slash_command
 from nextcord.ext import commands
 
 
@@ -10,7 +10,7 @@ class Commands(commands.Cog, name="Commands"):
 
     # [Ping]: Bot Latency
     @slash_command(name='ping', description='Return a message with bot latency', guild_ids=[])
-    async def ping(self, interaction: nextcord.Interaction):
+    async def ping(self, interaction: Interaction):
         bot = self.bot
         botPing = round(bot.latency * 1000)
         embed = Embed(
