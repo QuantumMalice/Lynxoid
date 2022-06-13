@@ -1,5 +1,5 @@
 from nextcord.ext import commands
-from nextcord import Embed, Colour, User
+from nextcord import User, Colour, Embed 
 
 class EmbedTool(commands.Cog):
     
